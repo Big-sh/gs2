@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>급식급식체</title>
+<style type="text/css">
+
+	body{ margin:auto; background-image: url("pan.jpg"); background-repeat: no-repeat; background-position: center; background-size: cover;}
+
+	.test { text-align: center; text-shadow: 2px 2px white;}
+
+</style>
+
+</head>
+
+<body>
+
+	<div id = "gimotti"></div>
+
+</body>
+
+<script>
+
+var a = "ㅇㄱㄹㅇ ㅂㅂㅂㄱ 핑프 복세편살 연서복 팬아저 취존 덕계못 성덕 버카충 안물안궁 따아 번달번줌 대만만 새터 별다줄 머전머학교 갈비 안진마";
+
+	var b = a.split(" "); //스플릿 메소드를 사용해 문장을 배열로 전환.
+
+	for(var i=0; i < b.length; i++){
+
+	console.log(b[i]); //b[i]를 통해 해당 텍스트를 순서대로 읽을 수 있습니다.
+
+	var c = document.createElement("div"); // 이것은 복사하지않고 새로운 div를 스크립트로 생성하는 메소드입니다.
+
+	c.innerHTML = b[i];
+
+	c.className = "test"; // 새롭게 생성한 c에 클래스를 지정하면 미리 설정해 준 스타일을 적용가능
+
+	c.id = "g" + i;
+
+	c.style.height = 30 + "px";
+
+	document.body.appendChild(c); //마지막으로 body에 붙여넣습니다.
+
+	}
+
+document.getElementById("g0").onmousedown = function() {mouseDown()};
+document.getElementById("g0").onmouseup = function() {mouseUp()};
+
+function mouseDown() {document.getElementById("g0").innerHTML = "이거레알";}
+function mouseUp() {document.getElementById("g0").innerHTML = "ㅇㄱㄹㅇ";}
+
+document.getElementById("g1").onmousedown = function() {mouseDown2()};
+document.getElementById("g1").onmouseup = function() {mouseUp2()};
+
+function mouseDown2() {document.getElementById("g1").innerHTML = "반박불가";}
+function mouseUp2() {document.getElementById("g1").innerHTML = "ㅂㅂㅂㄱ";}
+
+document.getElementById("g2").onmousedown = function() {mouseDown3()};
+document.getElementById("g2").onmouseup = function() {mouseUp3()};
+
+function mouseDown3() {document.getElementById("g2").innerHTML = "핑거 프린세스";}
+function mouseUp3() {document.getElementById("g2").innerHTML = "핑프";}
+
+document.getElementById("g3").onmousedown = function() {mouseDown4()};
+document.getElementById("g3").onmouseup = function() {mouseUp4()};
+
+function mouseDown4() {document.getElementById("g3").innerHTML = "복잡한 세상 편하게 살자";}
+function mouseUp4() {document.getElementById("g3").innerHTML = "복세편살";}
+
+document.getElementById("g4").onmousedown = function() {mouseDown5()};
+document.getElementById("g4").onmouseup = function() {mouseUp5()};
+
+function mouseDown5() {document.getElementById("g4").innerHTML = "연애에 서툰 복학생";}
+function mouseUp5() {document.getElementById("g4").innerHTML = "연서복";}
+
+document.getElementById("g5").onmousedown = function() {mouseDown6()};
+document.getElementById("g5").onmouseup = function() {mouseUp6()};
+
+function mouseDown6() {document.getElementById("g5").innerHTML = "팬이 아니어도 저장한다";}
+function mouseUp6() {document.getElementById("g5").innerHTML = "팬아저";}
+
+
+</script>
+
+</body>
+</html>
